@@ -1088,7 +1088,27 @@ production_factories:
     repair_inputs:
       Sticks:
         material: STICK
-        amount: 3  
+        amount: 3
+  Random_Chainmail_Factory:
+    name: Random Chainmail Factory
+    fuel: 
+      Charcoal:
+        material: COAL
+        durability: 1
+      inputs:  
+       Iron Blocks:
+        material: IRON_BLOCK
+        amount: 256 
+      recipes:
+      - Create_Chainmail_Leggings
+      - Create_Chainmail_Boots
+      - Create_Chainmail_Chestplate
+      - Create_Chainmail_Helmet
+    repair_multiple: 6
+    repair_inputs:
+      Iron Blocks:
+        material: IRON_BLOCK
+        amount: 4  
   Random_Iron_Tool_Factory:
     name: Random Iron Tool Factory
     fuel: 
@@ -10446,6 +10466,214 @@ production_recipes:
         type: DAMAGE_UNDEAD
         level: 3
         probability: 0.003
+  Create_Chainmail_Leggings:
+    name: Create Chainmail Leggings
+    production_time: 40
+    inputs:
+      Chainmail Leggings:
+        material: CHAINMAIL_LEGGINGS
+        amount: 1
+      Emerald Blocks:
+        material: EMERALD_BLOCK
+        amount: 2
+    outputs:
+      Enchanted Chainmail Leggings:
+        material: CHAINMAIL_LEGGINGS
+        amount: 1
+    enchantment_options:
+      safe_only: true
+      ensure_one: true
+    enchantments:
+      Unbreaking 3:
+        type: DURABILITY
+        level: 3
+        probability: 0.16
+      Protection 3:
+        type: PROTECTION_ENVIRONMENTAL
+        level: 3
+        probability: 0.26
+      Projectile Protection 3:
+        type: PROTECTION_PROJECTILE
+        level: 3
+        probability: 0.18
+      ProjectileProtection 4:
+        type: PROTECTION_PROJECTILE
+        level: 4
+        probability: 0.12
+      Fire Protection 3:
+        type: PROTECTION_FIRE
+        level: 3
+        probability: 0.07
+      Fire Protection 4:
+        type: PROTECTION_FIRE
+        level: 4
+        probability: 0.06
+      Blast Protection 4:
+        type: PROTECTION_EXPLOSIONS
+        level: 4
+        probability: 0.05
+  Create_Chainmail_Boots:
+    name: Create Chainmail Boots
+    production_time: 40
+    inputs:
+      Chainmail Boots:
+        material: CHAINMAIL_BOOTS
+        amount: 1
+      Emerald Blocks:
+        material: EMERALD_BLOCK
+        amount: 2
+    outputs:
+      Enchanted Chainmail Boots:
+        material: CHAINMAIL_BOOTS
+        amount: 1
+    enchantment_options:
+      safe_only: true
+      ensure_one: true
+    enchantments:
+      Unbreaking 3:
+        type: DURABILITY
+        level: 3
+        probability: 0.07
+      Protection 3:
+        type: PROTECTION_ENVIRONMENTAL
+        level: 3
+        probability: 0.04
+      Feather Falling 4:
+        type: PROTECTION_FALL
+        level: 4
+        probability: 0.25
+      Protection 4:
+        type: PROTECTION_ENVIRONMENTAL
+        level: 4
+        probability: 0.03
+      Projectile Protection 4:
+        type: PROTECTION_PROJECTILE
+        level: 4
+        probability: 0.24
+      Fire Protection 3:
+        type: PROTECTION_FIRE
+        level: 3
+        probability: 0.14
+      Fire Protection 4:
+        type: PROTECTION_FIRE
+        level: 4
+        probability: 0.13
+      Blast Protection 4:
+        type: PROTECTION_EXPLOSIONS
+        level: 4
+        probability: 0.10
+  Create_Chainmail_Chestplate:
+    name: Create Chainmail Chestplate
+    production_time: 40
+    inputs:
+      Chainmail Chestplate:
+        material: CHAINMAIL_CHESTPLATE
+        amount: 1
+      Emerald Blocks:
+        material: EMERALD_BLOCK
+        amount: 2
+    outputs:
+      Enchanted Chainmail Chestplate:
+        material: CHAINMAIL_CHESTPLATE
+        amount: 1
+    enchantment_options:
+      safe_only: true
+      ensure_one: true
+    enchantments:
+      Unbreaking 3:
+        type: DURABILITY
+        level: 3
+        probability: 0.04
+      Protection 3:
+        type: PROTECTION_ENVIRONMENTAL
+        level: 3
+        probability: 0.04
+      Projectile Protection 4:
+        type: PROTECTION_PROJECTILE
+        level: 4
+        probability: 0.27
+      Protection 4:
+        type: PROTECTION_ENVIRONMENTAL
+        level: 4
+        probability: 0.03
+      Thorns 2:
+        type: THORNS
+        level: 2
+        probability: 0.19
+      Fire Protection 3:
+        type: PROTECTION_FIRE
+        level: 3
+        probability: 0.18
+      Fire Protection 4:
+        type: PROTECTION_FIRE
+        level: 4
+        probability: 0.12
+      Blast Protection 4:
+        type: PROTECTION_EXPLOSIONS
+        level: 4
+        probability: 0.12
+      Thorn 1:
+        type: THORNS
+        level: 1
+        probability: 0.01
+  Create_Chainmail_Helmet:
+    name: Create Chainmail Helmet
+    production_time: 40
+    inputs:
+      Chainmail Helmet:
+        material: CHAINMAIL_HELMET
+        amount: 1
+      Emerald Blocks:
+        material: EMERALD_BLOCK
+        amount: 2
+    outputs:
+      Enchanted Chainmail Helmet:
+        material: CHAINMAIL_HELMET
+        amount: 1
+    enchantment_options:
+      safe_only: true
+      ensure_one: true
+    enchantments:
+      Unbreaking 3:
+        type: DURABILITY
+        level: 3
+        probability: 0.06
+      Protection 3:
+        type: PROTECTION_ENVIRONMENTAL
+        level: 3
+        probability: 0.04
+      Projectile Protection 4:
+        type: PROTECTION_PROJECTILE
+        level: 4
+        probability: 0.19
+      Protection 4:
+        type: PROTECTION_ENVIRONMENTAL
+        level: 4
+        probability: 0.03
+      Aqua Affinity 1:
+        type: WATER_WORKER
+        level: 1
+        probability: 0.18
+      Respiration 3:
+        type: OXYGEN
+        level: 3
+        probability: 0.17
+      Fire Protection 3:
+        type: PROTECTION_FIRE
+        level: 3
+        probability: 0.13
+      Fire Protection 4:
+        type: PROTECTION_FIRE
+        level: 4
+        probability: 0.10
+      Blast Protection 4:
+        type: PROTECTION_EXPLOSIONS
+        level: 4
+        probability: 0.10
+      Respiration 2:
+        type: OXYGEN
+        level: 2
+        probability: 0.01
   Create_Leather_Leggings:
     name: Create Leather Leggings
     production_time: 40
